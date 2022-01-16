@@ -34,3 +34,5 @@ pegarPersonagem = () => {
              condicao.innerHTML = data.status;
             } );
 } 
+
+botao.onclick = pegarPersonagem;
