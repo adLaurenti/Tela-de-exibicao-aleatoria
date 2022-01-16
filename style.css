@@ -22,10 +22,10 @@ body{
     }
     main > section button {
 
-        background-color: rgb(30, 109, 85);
+        background-color: rgba(30, 109, 85);
         border: none;
         border-radius: 2px;
-        color: rgb(241, 236, 236);
+        color: rgba(241, 236, 236);
         font-family: EuclidBold;
         font-size: 16px;
         font-weight: 600px;
@@ -42,3 +42,10 @@ body{
         list-style-type: none;
         width: 100%;
     }
+    #detalhes-container  > li {
+        align-items: baseline;
+        display: flex;
+     }
+     #detalhes-container > li p {
+         color: rgb(59, 18, 2);
+     }
