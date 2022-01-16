@@ -17,3 +17,20 @@ TraduzirCondicao = (data) => {
 gerarValorAleatorio = () => {
     return Math.floor(Math.random() * 3);
 }
+pegarPersonagem = () => {
+    let numeroAleatorio = gerarValorAleatorio(); 
+
+    return fetch(`https://rickandmortyapi.com/api/character/${numeroAleatorio}`, {
+        method:'GET', 
+          headers:{
+            Accept: 'application/json',
+            "Content-type": 'application/json'
+         }   
+         } ) .then((response) => response.json()).then((data) => {
+           imagem.src = data.imagem;
+           imagem.alt = data.name;
+           nomeDoPersonagem.innerHTML = data.name;
+           especie.innerHTML = data.species;
+           condicao.innerHTML = data.status;
+        } );
+    } 
