@@ -14,3 +14,24 @@ body{
     position: relative;
 
 }
+main > section img {
+
+    height: 300px;
+    margin: -4px 0;
+    width: 450px;
+}
+main > section button {
+
+    background-color: rgb(122, 82, 82);
+    border: none;
+    border-radius: 2px;
+    color: rgb(241, 236, 236);
+    font-family: EuclidBold;
+    font-size: 16px;
+    font-weight: 500px;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    padding: 9px 23px;
+    text-transform: uppercase;
+    
+}
